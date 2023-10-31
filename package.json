@@ -1,11 +1,16 @@
 {
-  "name": "react-component",
+  "name": "react-component-style",
   "version": "1.0.0",
   "description": "Component reactjs, tailwind css",
-  "main": "index.ts",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "tsc",
+    "prepare" : "npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
