@@ -10,7 +10,7 @@
     "@types/react-dom": "^18.2.14",
     "parcel": "^2.10.1",
     "react": "^18.2.0",
-    "react-component-style": "^1.0.1",
+    "react-component-style":"file:../dist/esm",
     "react-dom": "^18.2.0"
   }
 }
