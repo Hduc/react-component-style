@@ -1,23 +1,24 @@
 {
   "name": "react-component-style",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Component reactjs, tailwind css",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
-  "files": [
-    "lib"
-  ],
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
   "scripts": {
-    "start": "react-scripts start",
     "build": "tsc",
-    "prepare" : "npm run build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
+    "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hduc/react-component.git"
   },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
   "keywords": [
     "Reactjs",
     "Tailwind",
@@ -32,20 +33,14 @@
   },
   "homepage": "https://github.com/hduc/react-component#readme",
   "dependencies": {
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.59",
     "@types/react": "^18.2.33",
-    "@types/react-dom": "^18.2.14",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
-    "typescript": "^4.9.5",
-    "web-vitals": "^2.1.4"
+    "typescript": "^4.9.5"
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
@@ -59,5 +54,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "prettier": "^3.0.3",
+    "tailwindcss": "^3.3.5"
   }
 }
