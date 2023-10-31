@@ -6,7 +6,8 @@
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && npm run build-css",
+    "build-css":"npx tailwindcss -i ./src/index.css -o ./dist/esm/index.css",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\""
   },
