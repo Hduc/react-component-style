@@ -7,13 +7,12 @@ interface IProps {
 }
 
 
-
 const CardProduct = (props: IProps) => {
   return (<Title>12345 {props.name}</Title>);
 };
 
-CardProduct.propTypes = {
-  name: ""
+CardProduct.defaultProps = {
+  name: "demo"
 }
 
 export default CardProduct;
