@@ -1,13 +1,12 @@
 {
   "name": "react-component-style",
   "version": "1.0.1",
-  "description": "Component reactjs, tailwind css",
+  "description": "Component reactjs",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
   "scripts": {
-    "build": "tsc && npm run build-css",
-    "build-css":"npx tailwindcss -i ./src/index.css -o ./dist/esm/index.css",
+    "build": "tsc",
     "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
     "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\""
   },
@@ -22,7 +21,6 @@
   ],
   "keywords": [
     "Reactjs",
-    "Tailwind",
     "react-component",
     "component",
     "css"
@@ -36,8 +34,8 @@
   "dependencies": {
     "@types/react": "^18.2.33",
     "react": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "typescript": "^4.9.5"
+    "styled-components": "^6.1.0",
+    "typescript": "^5.2.2"
   },
   "eslintConfig": {
     "extends": [
@@ -59,7 +57,9 @@
   "devDependencies": {
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.1",
-    "prettier": "^3.0.3",
-    "tailwindcss": "^3.3.5"
+    "prettier": "^3.0.3"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   }
 }

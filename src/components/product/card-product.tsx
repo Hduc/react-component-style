@@ -1,15 +1,23 @@
 
 import React from "react";
+import styled from 'styled-components'
+
 interface IProps {
-  name: string 
+  name: string
 }
 
+const Title = styled.h1`
+  font-size: 1.5em;
+  text-align: center;
+  color: #BF4F74;
+`;
+
 const CardProduct = (props: IProps) => {
-  return (<span className="text-3xl font-bold underline">ádasdsas {props.name}</span>);
+  return (<Title className="text-3xl font-bold underline">ádasdsas {props.name}</Title>);
 };
 
-CardProduct.propTypes ={
-  name:""
+CardProduct.propTypes = {
+  name: ""
 }
 
 export default CardProduct;
