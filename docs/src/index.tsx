@@ -7,7 +7,7 @@ root.render(
   <React.StrictMode>
     <div>
       <h2>Default counter</h2>
-      <CardProduct name='123412' />
+      <CardProduct name="1231234" />
     </div>
   </React.StrictMode>,
 )

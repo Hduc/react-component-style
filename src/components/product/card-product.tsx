@@ -1,16 +1,12 @@
 
 import React from "react";
-import styled from 'styled-components'
+import { Title } from "../styles/title";
 
 interface IProps {
-  name: string
+  name: string | null
 }
 
-const Title = styled.h1`
-  font-size: 1.5em;
-  text-align: center;
-  color: #BF4F74;
-`;
+
 
 const CardProduct = (props: IProps) => {
   return (<Title>12345 {props.name}</Title>);
