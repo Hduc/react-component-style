@@ -13,7 +13,7 @@ const Title = styled.h1`
 `;
 
 const CardProduct = (props: IProps) => {
-  return (<Title className="text-3xl font-bold underline">ádasdsas {props.name}</Title>);
+  return (<Title>12345 {props.name}</Title>);
 };
 
 CardProduct.propTypes = {
