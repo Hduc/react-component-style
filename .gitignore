@@ -1,4 +1,7 @@
-
 node_modules/*
 package-lock.json
 dist/*
+yarn.lock
+build-storybook.log
+chromatic.log
+storybook-static/*
