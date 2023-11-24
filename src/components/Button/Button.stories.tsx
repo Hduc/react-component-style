@@ -4,7 +4,7 @@ import Button from "./Button";
 
 const meta: Meta<typeof Button> = {
   component: Button,
-  title: "Marbella/Button",
+  title: "Form/Button",
   argTypes: {},
 };
 export default meta;
