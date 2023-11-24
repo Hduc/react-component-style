@@ -25,6 +25,9 @@ const StyledLabel = styled.div<InputProps>`
   font-size: 14px;
   color: ${(props) => (props.disabled ? "#e4e3ea" : "#080808")};
   padding-bottom: 6px;
+  & .a123{
+    
+  }
 `;
 
 const StyledMessage = styled.div<InputProps>`
