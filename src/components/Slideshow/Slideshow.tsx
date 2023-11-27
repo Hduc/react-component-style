@@ -4,6 +4,9 @@ import { ImageObj, SlideshowProps } from "./Slideshow.types";
 
 const StyledSlideshow = styled.div<SlideshowProps>`
         box-sizing: border-box;
+        & .hidden {
+            display: none;
+        }
         & img {
         	vertical-align: middle;
         }
@@ -137,7 +140,7 @@ const Slideshow: FC<SlideshowProps> = ({
                 <a className="prev" onClick={() => plusSlides(-1)}>❮</a>
                 <a className="next" onClick={() => plusSlides(1)}>❯</a>
 
-                <div className="caption-container">
+                <div className="caption-container hidden">
                     <p id="caption"></p>
                 </div>
 
