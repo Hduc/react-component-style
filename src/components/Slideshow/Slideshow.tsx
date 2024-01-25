@@ -3,7 +3,7 @@ import { ImageObj, SlideshowProps } from "./Slideshow.types";
 import { StyledSlideshow } from "./Slideshow.style";
 
 let slideIndex = 0
-let timeout: NodeJS.Timeout;
+let timeout:number;
 const Slideshow = (props: SlideshowProps) => {
 
     useEffect(() => {
