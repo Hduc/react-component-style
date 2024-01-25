@@ -11,9 +11,11 @@ export default meta;
 type Story = StoryObj<typeof Transform>;
 
 export const Default: Story = (args) => (
-  <Transform data-test-id="transition-id" {...args} />
-  //   Xin chào các bạn
-  // </Transform>
+  <Transform data-test-id="transition-id" {...args} >
+    <div style={{width:'100%',height:'100%',textAlign:'center'}}>
+      Xin chafo
+    </div>
+  </Transform>
 );
 Default.args = {
   

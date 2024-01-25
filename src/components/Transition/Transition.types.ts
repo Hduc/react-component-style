@@ -1,6 +1,7 @@
 export interface ITransitionProps {
   id?: string
-  //children?: any
+  className?:string
+  children?: any
   type: 'linear' | 'ease' | 'ease-in' | 'ease-out' | 'ease-in-out'
   delay?: number
   timeTransform?: number

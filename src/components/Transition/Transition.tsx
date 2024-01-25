@@ -4,8 +4,8 @@ import { StyledTransition } from "./Transition.style";
 
 const Transition = (props: ITransitionProps) => {
     return (
-        <StyledTransition {...props}>
-            {/* {props.children} */}
+        <StyledTransition {...props} className={props.className}>
+            {props.children}
         </StyledTransition>
     );
 };
