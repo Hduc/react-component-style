@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { ITransitionProps } from "./Transition.types";
+import { IAnimationProps } from "./Animation.types";
 
-export const StyledTransition = styled.div<ITransitionProps>`
+export const StyledAnimation = styled.div<IAnimationProps>`
     width: ${(props) => props.width || '100px'};
     height: ${(props) => props.height || '100px'};
     transition: width ${(props) => props.timeWidth || 1}s, height ${(props) => props.timeHeight || 1}s, transform ${(props) => props.timeTransform || 1}s;

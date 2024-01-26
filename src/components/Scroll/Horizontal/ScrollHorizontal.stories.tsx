@@ -5,6 +5,7 @@ import ScrollHorizontal from "./ScrollHorizontal";
 const meta: Meta<typeof ScrollHorizontal> = {
   component: ScrollHorizontal,
   title: "Scroll/Horizontal",
+  tags: ['autodocs'],
   argTypes: {},
 };
 export default meta;

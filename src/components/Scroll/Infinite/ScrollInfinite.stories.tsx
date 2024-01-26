@@ -5,6 +5,7 @@ import ScrollInfinite from "./ScrollInfinite";
 const meta: Meta<typeof ScrollInfinite> = {
   component: ScrollInfinite,
   title: "Scroll/Infinite",
+  tags: ['autodocs'],
   argTypes: {},
 };
 export default meta;

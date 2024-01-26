@@ -5,6 +5,7 @@ import Slideshow from "./Slideshow";
 const meta: Meta<typeof Slideshow> = {
   component: Slideshow,
   title: "Image/Slideshow",
+  tags: ['autodocs'],
   argTypes: {},
 };
 export default meta;
