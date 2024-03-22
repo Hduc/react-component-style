@@ -32,6 +32,7 @@ export const Home: Story = (args) => (
 );
 Home.storyName = "Rotate and width"
 Home.args = {
+
   type: 'linear',
   height: "100px",
   toHeight: '100px',
@@ -40,6 +41,12 @@ Home.args = {
   timeWidth: 0.2,
   transform: "rotate(20deg)"
 };
+Home.parameters = {
+  design: {
+    type: "figma",
+    url: "https://www.figma.com/file/LKQ4FJ4bTnCSjedbRpk931/Sample-File",
+  },
+}
 
 export const transformSkewY: Story = (args) => (
   <Transform data-test-id="transition-id" {...args} >
@@ -48,7 +55,7 @@ export const transformSkewY: Story = (args) => (
     </div>
   </Transform>
 );
-transformSkewY.storyName = "Transform skewY" 
+transformSkewY.storyName = "Transform skewY"
 transformSkewY.args = {
   type: 'linear',
   height: "100px",
@@ -66,7 +73,7 @@ export const skewYAndScale: Story = (args) => (
     </div>
   </Transform>
 );
-skewYAndScale.storyName="Transform skewY and scale"
+skewYAndScale.storyName = "Transform skewY and scale"
 skewYAndScale.args = {
   type: 'linear',
   height: "100px",
@@ -84,7 +91,7 @@ export const transformScale: Story = (args) => (
     </div>
   </Transform>
 );
-transformScale.storyName = "Transform scale" 
+transformScale.storyName = "Transform scale"
 transformScale.args = {
   type: 'linear',
   height: "100px",
