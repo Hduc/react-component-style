@@ -1,24 +1,29 @@
 {
-  "name": "simple-ui",
+  "name": "react-component-style",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hduc/react-component-style.git"
+  },
   "files": [
     "dist"
   ],
-  "main": "dist/simple-ui-umd.cjs",
-  "module": "dist/simple-ui.js",
+  "main": "dist/react-component-style-umd.cjs",
+  "module": "dist/react-component-style.js",
   "exports": {
     ".": {
-      "import": "./dist/simple-ui.js",
-      "require": "./dist/simple-ui-umd.cjs"
+      "import": "./dist/react-component-style.js",
+      "require": "./dist/react-component-style-umd.cjs"
     }
   },
   "scripts": {
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "chromatic": "npx chromatic --project-token=chpt_62f1f416a4913d1"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.0",
@@ -42,6 +47,7 @@
     "@typescript-eslint/parser": "^6.10.0",
     "@vitejs/plugin-react": "^4.2.0",
     "autoprefixer": "^10.4.16",
+    "chromatic": "^11.2.0",
     "eslint": "^8.53.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
