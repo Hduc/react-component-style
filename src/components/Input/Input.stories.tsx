@@ -1,49 +1,41 @@
-import React from "react";
-import { Meta, StoryObj } from "@storybook/react";
-import Input from "./Input";
+import React from 'react'
+import { Meta, StoryObj } from '@storybook/react'
+import Input from './Input'
 
 const meta: Meta<typeof Input> = {
   component: Input,
-  title: "Form/InputField",
+  title: 'Form/InputField',
   tags: ['autodocs'],
   argTypes: {},
-};
-export default meta;
+}
+export default meta
 
-type Story = StoryObj<typeof Input>;
+type Story = StoryObj<typeof Input>
 
-export const Primary: Story = (args) => (
-  <Input data-test-id="InputField-id" {...args} />
-);
+export const Primary: Story = (args) => <Input data-test-id='InputField-id' {...args} />
 Primary.args = {
   error: false,
   disabled: false,
-  label: "Primary",
-};
+  label: 'Primary',
+}
 
-export const Success: Story = (args) => (
-  <Input data-test-id="InputField-id" {...args} />
-);
+export const Success: Story = (args) => <Input data-test-id='InputField-id' {...args} />
 Success.args = {
   error: false,
   success: true,
   disabled: false,
-  label: "Success",
-};
+  label: 'Success',
+}
 
-export const Error: Story = (args) => (
-  <Input data-test-id="InputField-id" {...args} />
-);
+export const Error: Story = (args) => <Input data-test-id='InputField-id' {...args} />
 Error.args = {
   error: true,
   disabled: false,
-  message: "Error",
-};
+  message: 'Error',
+}
 
-export const Disabled: Story = (args) => (
-  <Input data-test-id="InputField-id" {...args} />
-);
+export const Disabled: Story = (args) => <Input data-test-id='InputField-id' {...args} />
 Disabled.args = {
   disabled: true,
-  label: "Disabled",
-};
+  label: 'Disabled',
+}
