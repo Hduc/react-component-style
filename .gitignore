@@ -5,3 +5,4 @@ yarn.lock
 build-storybook.log
 chromatic.log
 storybook-static/*
+bun.lockb
